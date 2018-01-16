@@ -1,0 +1,23 @@
+{
+  "name": "js-easy-text-search",
+  "version": "1.0.0",
+  "description": "Easy to use text search engine.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/kalppi/js-easy-text-search.git"
+  },
+  "keywords": [
+    "text",
+    "search"
+  ],
+  "author": "Jarno Luukkonen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kalppi/js-easy-text-search/issues"
+  },
+  "homepage": "https://github.com/kalppi/js-easy-text-search#readme"
+}
