@@ -29,11 +29,11 @@ const search = new EasyTextSearch({ /* options */ });
 
 Option | Explanation
 -------|------------
-``minLength`` | minimum length for a word that can be searched
-``caseSensitive`` | are words case sensitive
-``field`` | which object field is searched
-``wildPrefix`` | are wildcard prefix searches allowed (``*word``)
-``wildSuffix`` | are wildcard suffix searches allowed (``key*``)
+``minLength`` | Minimum length for a word that can be searched
+``caseSensitive`` | Are words case sensitive
+``field`` | Which object field is searched
+``wildPrefix`` | Are wildcard prefix searches allowed (``*word``)
+``wildSuffix`` | Are wildcard suffix searches allowed (``word*``)
 
 Wildcard searches can be combined, i.e. ``*inch*`` matches words like ``pinch`` and ``pinching``.
 
