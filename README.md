@@ -1,3 +1,5 @@
+# Documentation
+
 ## Install
 
 ### From GitHub
@@ -5,9 +7,7 @@
 npm install git+https://github.com/kalppi/js-easy-text-search.git
 ```
 
-## Documentation
-
-### Init
+## Init
 ```js
 const EasyTextSearch = require('js-easy-text-search'),
 const search = new EasyTextSearch({ /* options */ });
@@ -37,7 +37,7 @@ Option | Explanation
 
 Wildcard searches can be combined, i.e. ``*inch*`` matches words like ``pinch`` and ``pinching``.
 
-:exclamation: Wildcard searches use lots of memory, so only allow them if necessary.
+:exclamation: Wildcard search indexes use lots of memory, so only allow them if necessary.
 
 ## Usage
 
