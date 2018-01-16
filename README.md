@@ -62,11 +62,11 @@ search.add([{
    text: 'Donec convallis erat dolor, volutpat venenatis eros finibus sit amet.'
 }, {
    id: 4,
-   value: 300,
+   value: 400,
    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin dignissim augue diam.'
 }]);
 ```
-### search(`searchString`, `options = null`)
+### search(`searchString`) / search(`searchString`, `{options}`)
 
 You can search documents containing multiple search words using `+` operator, or exclude documents containing certain words
 with `-` operator.
@@ -81,5 +81,43 @@ console.log(search.search('dolor+amet-proin'));
   { id: 3,
     value: 300,
     text: 'Donec convallis erat dolor, volutpat venenatis eros finibus sit amet.' } ]
+```
 
+#### Search options
+Option | Explanation
+-------|------------
+``filter`` | Function to filter search results
+``sort`` | Function to sort search results
+``limit`` | How many results to return at maximum
+
+```js
+console.log(search.search('dolor', {
+  filter: doc => {
+    return doc.value >= 200;
+  },
+  sort: (a, b) => {
+    return b.value - a.value;
+  },
+  limit: 2
+}));
+```
+```bash
+[ { id: 4,
+    value: 400,
+    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin dignissim augue diam.' },
+  { id: 3,
+    value: 300,
+    text: 'Donec convallis erat dolor, volutpat venenatis eros finibus sit amet.' } ]
+```
+
+## saveSync(`file`)
+Saves the search options and data to a file as json.
+```js
+search.saveSync('search.json');
+```
+
+## loadSync(`file`)
+Loads the search options and data from a file.
+```js
+const search = EasyTextSearch.loadSync('search.json');
 ```
