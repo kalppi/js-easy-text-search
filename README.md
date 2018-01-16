@@ -66,7 +66,7 @@ search.add([{
    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin dignissim augue diam.'
 }]);
 ```
-### search(`searchString`) / search(`searchString`, `{options}`)
+### search(`searchString`) / search(`searchString`, {`options`})
 
 You can search documents containing multiple search words using `+` operator, or exclude documents containing certain words
 with `-` operator.
