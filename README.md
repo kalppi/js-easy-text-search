@@ -47,9 +47,9 @@ Each added document should have an unique id.
 
 ```js
 search.add({
-  id: 1,
-  value: 100,
-  text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
+   id: 1,
+   value: 100,
+   text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
 });
 
 search.add([{
