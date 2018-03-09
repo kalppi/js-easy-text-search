@@ -53,9 +53,9 @@ search.add({
 });
 
 search.add([{
-  id: 2,
-  value: 200,
-  text: 'Nam dolor elit, convallis ac lacinia id, rhoncus ut magna. Maecenas imperdiet auctor justo a tempor. Duis imperdiet sollicitudin velit eget maximus.'
+   id: 2,
+   value: 200,
+   text: 'Nam dolor elit, convallis ac lacinia id, rhoncus ut magna. Maecenas imperdiet auctor justo a tempor. Duis imperdiet sollicitudin velit eget maximus.'
 }, {
    id: 3,
    value: 300,
